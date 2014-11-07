@@ -14,6 +14,10 @@ gem 'pg'
 
 gem 'rails_12factor'
 
+# Devise
+
+gem 'devise'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
