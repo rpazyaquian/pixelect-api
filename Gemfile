@@ -18,6 +18,10 @@ gem 'rails_12factor'
 
 gem 'devise'
 
+# acts_as_votable
+
+gem 'acts_as_votable'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
