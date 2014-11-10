@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :users, except: [:new, :edit]
+
+  resources :image_sets, except: [:new, :edit] do
+    resources :comments, except: [:new, :edit]
+    resources :images, except: [:new, :edit]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
