@@ -7,7 +7,7 @@ RSpec.describe "Comments", :type => :request do
 
     describe '#index' do
 
-      before (:all) { FactoryGirl.create_list(:image, 10, image_set: @image_set) }
+      before (:all) { FactoryGirl.create_list(:comment, 10, image_set: @image_set) }
 
       it "lists all comments in image set" do
         get "/image_sets/#{@image_set.id}/comments"

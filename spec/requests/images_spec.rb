@@ -38,7 +38,7 @@ RSpec.describe "Images", :type => :request do
       end
 
       context "when signed in" do
-        it "increases an image's score by 1" do
+        xit "increases an image's score by 1" do
           put "/image_set/#{@image_set.id}/images/#{@image.id}", upvote: true
 
           # expect(response.status).to eq 200
@@ -46,7 +46,7 @@ RSpec.describe "Images", :type => :request do
         end
       end
       context "when not signed in" do
-        it "responds with login error" do
+        xit "responds with login error" do
           put "/image_set/#{@image_set.id}/images/#{@image.id}", upvote: true
 
           # expect(response.status).to eq 401

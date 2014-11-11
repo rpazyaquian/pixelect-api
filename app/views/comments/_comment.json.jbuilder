@@ -1,1 +1,1 @@
-json.(comment, :id, :text, :user_id)
+json.(comment, :id, :text, :user, :image_set)
