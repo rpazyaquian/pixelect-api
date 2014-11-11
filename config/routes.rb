@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users, except: [:new, :edit], defaults: { format: :json }
+  get 'amazon/sign_key'
 
   resources :image_sets, except: [:new, :edit], defaults: { format: :json } do
     resources :comments, except: [:new, :edit], defaults: { format: :json }
