@@ -1,1 +1,1 @@
-json.(image_set, :id, :question)
+json.(image_set, :id, :question, :images)
