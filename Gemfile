@@ -7,6 +7,7 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'aws-sdk-core'
 gem 'dotenv-rails'
 gem 'jbuilder'
+gem 'acts_as_votable'
 
 group :production do
   gem 'spring'
