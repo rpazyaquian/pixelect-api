@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :image do
-    url { Faker::Internet.url }
+    url { Faker::Avatar.image }
     image_set
   end
 
