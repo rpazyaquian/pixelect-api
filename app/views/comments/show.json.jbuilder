@@ -1,1 +1,0 @@
-json.(@comment, :id, :text, :user_id)
