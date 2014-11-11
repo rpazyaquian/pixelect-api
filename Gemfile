@@ -24,6 +24,11 @@ group :development, :test do
   gem 'database_cleaner'
 end
 
+group :production do
+  gem 'factory_girl_rails'
+  gem 'faker'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
