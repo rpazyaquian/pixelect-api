@@ -11,7 +11,7 @@ RSpec.describe "ImageSets", :type => :request do
         # hello!
 
         # expect(response.status).to eq 200
-        expect(json.length).to eq(10)
+        expect(json['image_sets'].length).to eq(10)
       end
 
     end
