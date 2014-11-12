@@ -14,8 +14,9 @@ class Amazon
         'conditions': [
           {'bucket': '#{bucket}'},
           {'acl': '#{acl}'},
+          {'success_action_status': #{sas}},
           ['starts-with', '$key', '#{key}'],
-          ['content-length-range', 1, #{max_filesize}]
+          ['content-length-range', 1, #{max_filesize}],
           ]}
           ").gsub(/\n|\r/, '')
       signature = Base64.encode64(OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'), secret, policy)).gsub(/\n| |\r/, '')
