@@ -14,7 +14,7 @@ class Amazon
         'conditions': [
           {'bucket': '#{bucket}'},
           {'acl': '#{acl}'},
-          {'success_action_status': #{sas}},
+          {'success_action_status': '#{sas}'},
           ['starts-with', '$key', '#{key}'],
           ['content-length-range', 1, #{max_filesize}],
           ]}
