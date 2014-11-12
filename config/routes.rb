@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :images, except: [:new, :edit], defaults: { format: :json }
   end
 
-    resources :users
+
     resources :sessions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
