@@ -13,7 +13,7 @@ group :production do
   gem 'spring'
   gem 'rails_12factor'
 end
-
+gem 'bcrypt', :require => "bcrypt"
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
