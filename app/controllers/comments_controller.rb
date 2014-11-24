@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def index
-    @comments = Comment.all
+    @comments = Comment.includes(:user).all
   end
   def show
     @comment = Comment.find(params[:id])
