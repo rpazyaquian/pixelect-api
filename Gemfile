@@ -8,6 +8,7 @@ gem 'aws-sdk-core'
 gem 'dotenv-rails'
 gem 'jbuilder'
 gem 'acts_as_votable'
+gem 'newrelic_rpm'
 
 group :production do
   gem 'spring'
