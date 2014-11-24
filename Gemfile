@@ -21,4 +21,5 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'database_cleaner'
+  gem 'bullet'
 end

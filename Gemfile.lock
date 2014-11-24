@@ -45,6 +45,9 @@ GEM
       multi_xml (~> 0.5)
     bcrypt (3.1.9)
     builder (3.2.2)
+    bullet (4.13.1)
+      activesupport (>= 3.0.0)
+      uniform_notifier (>= 1.6.0)
     byebug (3.5.1)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
@@ -166,6 +169,7 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uniform_notifier (1.6.2)
 
 PLATFORMS
   ruby
@@ -174,6 +178,7 @@ DEPENDENCIES
   acts_as_votable
   aws-sdk-core
   bcrypt
+  bullet
   database_cleaner
   dotenv-rails
   factory_girl_rails
