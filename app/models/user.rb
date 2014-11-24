@@ -12,12 +12,17 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
 
   def self.authenticate(email, password)
+    # look for user
+    # compare user's password hash with password and salt
+    # return user's id (or nil)
     user = find_by_email(email)
+
     if user && user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
       user.id
     else
       nil
     end
+
   end
 
   def encrypt_password
