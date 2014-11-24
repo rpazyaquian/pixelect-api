@@ -1,6 +1,6 @@
 class ImageSetsController < ApplicationController
   def index
-    @image_sets = ImageSet.all
+    @image_sets = ImageSet.includes(:images).all
   end
   def show
     @image_set = ImageSet.find(params[:id])
